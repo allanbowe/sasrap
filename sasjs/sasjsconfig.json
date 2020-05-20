@@ -1,0 +1,23 @@
+{
+ "useMacroCore": true,
+ "targets": [
+  {
+   "name": "viya",
+   "serverType": "SASVIYA",
+   "appLoc": "/Users/&sysuserid/My Folders/sasjs/rap",
+   "assetPaths": ["assets"],
+   "streamWeb": true,
+   "streamWebFolder": "web",
+   "webSourcePath": "src"
+  },
+  {
+   "name": "sas9",
+   "serverType": "SAS9",
+   "appLoc": "/User Folders/&sysuserid/My Folder",
+   "assetPaths": ["assets"],
+   "streamWeb": true,
+   "streamWebFolder": "web",
+   "webSourcePath": "src"
+  }
+ ]
+}
