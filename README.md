@@ -14,18 +14,18 @@ Ok, lemme break it down for ya.  The ability to base64 encode binary files insid
 
 This does not make it a good technique!  In fact it's highly inefficient, and should only be used if there are no better options (such as serving directly from the static content area of the SAS Web Server, or from a database that supports binary file types).
 
-The point of the repo is to demonstrate the utility of the "streaming" functionality of [SASjs](https://sasjs.io) for building web apps.  For simple apps, for sites where getting access to the SAS Web Server is time consuming or problematic, streaming web content is sometimes the only available option.  SASjs supports (but does not usually recommend) this approach.  It's worth noting that such assets are cached on the browser side, so there is usually just one request needed per user/browser combination.
+The point of the repo is to demonstrate the utility of the "streaming" functionality of [SASjs](https://sasjs.io) for building web apps.  For simple apps, for sites where getting access to the SAS Web Server is time consuming or problematic, streaming web content is sometimes the only available option.  SASjs supports (but does not usually recommend) this approach.  It's worth noting however that such assets are cached on the browser side, so there is usually just one request needed per user/browser combination.
 
 ## Prerequisites
 
 * NPM
 * SASjs 
 
-Once you have installed NPM, run `sasjs i -g sasjs-cli` to get the CLI tool
+Once you have installed NPM, run `sasjs i -g @sasjs/cli` to get the CLI tool
 
 ## Build Process
 
-Clone the repo and `cd` into it.  Then run `sasjs cb sas9` or `sasjs cb viya` depending on your preferred SAS target.  This will compile the assets from the `src` folder and build a deployment program under `sasjsbuild`.  Run this program in SAS (must be StudioV in Viya) to create the service in your home directory.  The link will be at the bottom of the log.
+Clone the repo and `cd` into it.  Then run `sasjs cb -t sas9` or `sasjs cb -t viya` depending on your preferred SAS target.  This will compile the assets from the `src` folder and build a deployment program under `sasjsbuild`.  Run this program in SAS (must be StudioV in Viya) to create the service in your home directory.  The link will be at the bottom of the log.
 
 ## Credits
 
