@@ -10,6 +10,6 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@sasjs/core": "4.17.1"
+    "@sasjs/core": "^4.32.13"
   }
 }
