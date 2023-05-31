@@ -19,9 +19,9 @@ The point of the repo is to demonstrate the utility of the "streaming" functiona
 ## Prerequisites
 
 * NPM
-* SASjs 
+* SASjs CLI
 
-Once you have installed NPM, run `sasjs i -g @sasjs/cli` to get the CLI tool
+Once you have installed NPM, run `npm i -g @sasjs/cli` to get the CLI tool
 
 ## Build Process
 
